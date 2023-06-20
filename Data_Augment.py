@@ -10,6 +10,7 @@ from d2l import torch as d2l
 import matplotlib.pyplot as plt
 import random
 
+
 def noisy(data, noise_factor=3):  #插入随机噪音
     noise = np.random.randn(len(data))
     augmented_data = data + noise_factor * noise
